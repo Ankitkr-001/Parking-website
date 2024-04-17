@@ -1,0 +1,135 @@
+.parking {
+  width: 100%;
+  height: 90vh;
+  background: black;
+  color: yellow;
+  position: relative;
+  font-family: "Roboto Slab", serif;
+  transition: 0.5s;
+}
+
+.park-title {
+  position: relative;
+}
+
+.main-title h1 {
+  font-size: 65px;
+  font-weight: 900;
+  color: hsla(0, 1%, 33%, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 45px;
+  position: absolute;
+  top: 0;
+  left: 23%;
+  animation: movedown 1s linear infinite alternate;
+}
+
+@keyframes movedown {
+  0% {
+    top: 0%;
+  }
+
+  100% {
+    top: 2%;
+  }
+}
+
+.sub-title h2 {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  top: 19%;
+  left: 33%;
+  animation: moveup 1s linear infinite alternate;
+}
+
+@keyframes moveup {
+  0% {
+    top: 19%;
+    left: 33%;
+  }
+
+  100% {
+    top: 15%;
+  }
+}
+
+.parking-left {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 30%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/car-park2.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s;
+  left: 20%;
+}
+.parking-right {
+  height: 400px;
+  width: 400px;
+  /* background-color: blue; */
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/bike-park.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+}
+.parking-left h1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.parking-right h1 {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  
+}
+.parking-right:hover{
+    background: rgb(179, 179, 3);
+    color: black;
+    
+}
+.parking-left:hover{
+    background: rgb(179, 179, 3);
+    color: black;
+}
+
+.park-btn{
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: yellow;
+    color: black;
+    margin-top: 15px;
+
+}
+
+.parking-right:hover .park-btn{
+  background-color: white;
+  color: black;
+}
+.parking-left:hover .park-btn{
+  background-color: white;
+  color: black;
+}

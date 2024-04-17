@@ -1,0 +1,67 @@
+.navbar{
+    width: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.logo img{
+    width: 100px;
+    margin: 10px 20px;
+}
+.link ul{
+    position: relative;
+    width: 524px;
+    height: 60px;
+    background: #222;
+    border-radius: 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    margin-right: 45px;
+
+}
+.link ul li{
+   position: relative;
+   display: inline-block;
+   font-size: 15px;
+   font-weight: 700;
+   color: #fff;
+   text-decoration: none;
+   padding: 0 30px;
+   z-index: 1;
+   cursor: pointer;
+
+}
+.link ul span{
+    position: absolute;
+    top: 0;
+    left: 28px;
+    width: 95px;
+    height: 100%;
+    transition: 0.5s;
+    background: linear-gradient(45deg, #4f1919 , #ff3333);
+    border-radius: 8px;
+
+}
+
+.link ul li:nth-child(1):hover~span{
+    left: 28px;
+}
+.link ul li:nth-child(2):hover~span{
+    left: 125px;
+}
+.link ul li:nth-child(3):hover~span{
+    left: 235px;
+    width: 129px;
+}
+.link ul li:nth-child(4):hover~span{
+    left: 385px;
+}
