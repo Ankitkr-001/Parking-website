@@ -22,7 +22,7 @@ const Parking = () => {
       </div>
       <div className="parking-right">
         <h1>unparking</h1>
-        <Link to={'/unparking'}><button className="park-btn">Click here for unparking</button></Link>
+        <Link to={'/unparking'}><button className="park-btn" >Click here for unparking</button></Link>
       </div>
     </div>
   );

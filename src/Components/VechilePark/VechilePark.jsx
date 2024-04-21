@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 const VechilePark = () => {
 
+  
+
     const [hideText,setHideText] = useState(true)
 
 
@@ -27,7 +29,7 @@ const VechilePark = () => {
         <label htmlFor="">Your Name:</label>
         <input type="text" required />
 
-        <button className="vechile-park-btn" type="submit" onClick={showText}>Submit</button>
+        <button className="vechile-park-btn" type="submit"  onClick={showText}>Submit</button>
         <Link to={'/unparking'}><button className="vechile-park-btn">Unparking</button></Link>
         <Link to={'/'}><button className="vechile-park-btn">Go Back</button></Link>
 

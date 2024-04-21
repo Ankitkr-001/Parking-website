@@ -1,0 +1,13 @@
+.feedback{
+    height: 90vh;
+    background-image: url('../../assets/feedback.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.feedback-form{
+    /* backdrop-filter: blur(5px); */
+}

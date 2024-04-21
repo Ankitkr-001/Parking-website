@@ -49,7 +49,12 @@
     transition: 0.5s;
     background: linear-gradient(45deg, #4f1919 , #ff3333);
     border-radius: 8px;
+    /* z-index: -1; */
 
+}
+.link ul li a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .link ul li:nth-child(1):hover~span{
@@ -64,4 +69,13 @@
 }
 .link ul li:nth-child(4):hover~span{
     left: 385px;
+    
 }
+
+/* Move the span based on the active NavLink */
+
+
+.link ul li a.active {
+    color: red;
+  }
+  
